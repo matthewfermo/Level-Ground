@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    margin: 10px;
+}
+
+p {
+    line-height: 1.5em;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background-color: slategray;
+}
+
+.top-bar {
+    display: flex;
+}
+
+.top-bar > nav, .donate {
+    width: 25%;
+    display: flex;
+    align-items: center;
+}
+
+.donate {
+    margin: 20px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 50%;
+    text-align: center;
+}
+
+.logoWrapper img {
+    height: 40px;
+    width: 40px;
+}
+
+#nav-menu {
+    display: flex;
+    list-style-type: none;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+.hero {
+    text-align: center;
+    background-color: slategray;
+    padding: 40px;
+    color: white;
+}
+
+.why {
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 80px;
+}
+
+.home, .away {
+    text-align: center;
+}
+
+#home-box, #away-box {
+    background-color: slategray;
+    height: 200px;
+    width: 75%;
+    margin: auto;
+    
+}
+
+.visits {
+    padding: 40px;
+    background-color: lightgray;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.volunteer {
+    text-align: center;
+    background-color: white;
+    padding: 40px, 80px;
+}
+
+.volunteer-button {
+    margin: 10px;
+}
+
+footer {
+    display: flex;
+    background-color: rgba(24,31,41,1);
+    color: white;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.footer-left, .footer-right {
+    flex-basis: 50%;
+}
+
+.footer-right p {
+    margin: 0;
+}
+
+.site-map-ul, .contribute-ul {
+    display: flex;
+    list-style-type: none;
+    gap: 10%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.burger-menu {
+    display: none;
+}
+
+@media screen and (max-width:390px) {
+    nav, #nav-menu, .donate, .topBar, footer {
+        display: none;
+    }
+    .visits {
+        display: block;
+    }
+    .home, .away {
+        padding: 20px;
+    }
+
+}
+
+@media (max-width: 767px) {
+    nav, #nav-menu, .donate, .topBar, footer {
+        display: none;
+    }
+  }
+
+  @media (max-width:992px) {
+    nav, .donate {
+        display: none;
+    }
+    #nav-menu {
+        padding: 10px;
+        justify-content: space-evenly;
+    }
+  }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
